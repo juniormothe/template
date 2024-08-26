@@ -33,7 +33,7 @@ function showNotification(colorName, text, placementFrom, placementAlign, animat
                 enter: animateEnter,
                 exit: animateExit
             },
-            template: '<div style="border: 1px; border-color: white" data-notify="container" class="bootstrap-notify-container alert alert-dismissible {0} ' + (allowDismiss ? "p-r-35" : "") + '" role="alert">' +
+            template: '<div style="border: solid 1px; border-color: white" data-notify="container" class="bootstrap-notify-container alert alert-dismissible {0} ' + (allowDismiss ? "p-r-35" : "") + '" role="alert">' +
             '<button type="button" aria-hidden="true" class="close" data-notify="dismiss">×</button>' +
             '<span data-notify="icon"></span> ' +
             '<span data-notify="title">{1}</span> ' +
