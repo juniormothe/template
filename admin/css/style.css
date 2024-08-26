@@ -32,7 +32,7 @@
     margin-top: -4px;
     margin-right: 17px; }
     .navbar .navbar-toggle:before {
-      content: '\E8D5';
+      content: '\E7FD'; 
       font-family: 'Material Icons';
       font-size: 26px; }
   .navbar .navbar-collapse.in {
@@ -6715,7 +6715,7 @@ fieldset[disabled] .form-control {
     margin-top: -4px;
     margin-right: 17px; }
     .navbar .navbar-toggle:before {
-      content: '\E8D5';
+      content: '\E7FD';
       font-family: 'Material Icons';
       font-size: 26px; }
   .navbar .navbar-collapse.in {
