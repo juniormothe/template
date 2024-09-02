@@ -1,0 +1,563 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+:root {
+    --main-color: #41a3f8;
+    --text-color: #111;
+    --light-text: #272727a2;
+    --font-secondary: #222;
+    --ligth-bg: rgb(247, 247, 247)
+}
+
+body{
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+.flex{
+    display: flex;
+}
+
+nav{
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 95px;
+    display: flex;
+    justify-content: space-between;
+    padding: 22px 7%;
+    box-sizing: border-box;
+    background: var(--ligth-bg);
+    align-items: center;
+}
+
+nav div{
+    align-items: center;
+}
+
+nav h1 a img{
+    width: 45%;
+    cursor: pointer;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+}
+
+nav ul li{
+    margin: 0 2vw;
+    list-style: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: var(--light-text);
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+nav ul li a:hover{
+    color: var(--main-color);
+}
+
+.standartdBtn{
+    border: none;
+    outline: none;
+    color: white;
+    background: #57cbee;
+    padding: 10px 12px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    border-radius: 3px;
+    cursor: pointer;
+   
+}
+
+.standartdBtn a {
+    text-decoration: none;
+    color: white;
+}
+
+.standartdBtnQS {
+    border: none;
+    outline: none;
+    color: white;
+    background: #57cbee;
+    padding: 20px 30px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-bottom: 10%;
+    cursor: pointer; /* Muda o cursor para o de clique */
+    transition: background-color 0.3s; /* Transição suave para o hover */
+}
+
+.standartdBtnQS:hover {
+    background-color: #357ABD; /* Cor do botão ao passar o mouse */
+}
+
+.standartdBtnQS a {
+    text-decoration: none;
+    color: white;
+}
+
+.standartdBtnQS .cities a{
+    text-decoration: none;
+    color: white;
+    align-items: center;
+}
+
+.btn {
+    text-decoration: none;
+    color: black;
+    background: #57cbee;
+}
+
+/*----------------- Home ---------------*/
+
+.bg.Section{
+    background: var(--ligth-bg);
+}
+
+section{
+    padding: 0 7%;
+   /* max-width: 1280px;*/
+    margin: auto;
+}
+
+.hero-section{
+    display: flex;
+    padding-top: 60px;
+    background: var(--main-color);
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-section .heroDiv{
+    width: 90%;
+}
+
+.hero-section form{
+    display: flex;
+    background: white;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 12px 16px;
+    border-radius: 4px;
+}
+
+.hero-section form div{
+    display: flex;
+    background: var(--ligth-bg);
+    align-items: center;
+    position: relative;
+    padding: 0 12px;
+}
+
+.hero-section form input{
+    padding: 14px 8px;
+    font-size: 14px;
+    font-family: 'Poppins';
+    margin: 0 15px 0 0;
+    outline: none;
+    border: none;
+    background: var(--ligth-bg);
+}
+
+.hero-section form select{
+    padding: 14px 12px;
+    font-size:  14px;
+    font-family: 'Poppins';
+    border: none;
+    width: 100%;
+    outline: none;
+    appearance: none;
+    background: var(--ligth-bg);
+}
+
+
+/* toque especial */
+.subTitulo{
+    font-size: 2.5vw;
+    font-weight:80;/* espesura da letra  */
+    color: white;
+    
+}
+/* fim toque especial */
+
+.hero-section .heroDiv h1{
+    font-size: 6vw;
+    color: white;
+    line-height: 100%;  
+    font-weight:500;  /* espesura da letra  */
+}
+
+.hero-section .heroDiv p{
+    font-size: 2vw;
+    color: var(--light-text);
+    line-height: 40px; /* distancia entre as linhas  */
+    margin: 20px 10px;
+    color: white;
+}
+
+.hero-section .heroImg{
+    width: 63%;
+    height: 100%;
+    /*position: relative;*/
+}
+
+.mainHeroImg{
+    width: 100%;
+}
+
+.heroImg div{
+    width: 120%;
+    height: 80%; 
+}
+
+.heroDiv img{
+    width: 10%;
+}
+
+/*---------- single image scroll ------*/
+
+.section {
+    padding-top: 100px; /* Adiciona um padding suficiente para compensar o navbar fixo */
+    margin-top: -100px;
+}
+
+.main-content {
+    position: relative; /* Para que o pseudo-elemento seja posicionado corretamente */
+    background-image: url('../imag/background-1.png'); /* Caminho correto para a sua imagem */
+    background-size: cover; /* Cobre toda a área da div */
+    background-position: center; /* Centraliza a imagem */
+    background-attachment: fixed; /* Faz a imagem de fundo ficar fixa */
+    padding: 60px 0; /* Adiciona algum espaçamento ao redor do conteúdo */
+    width: 100%;
+    overflow: hidden; /* Para garantir que o pseudo-elemento não transborde */
+    z-index: 1;
+}
+
+/* Pseudo-elemento para criar a camada de transparência */
+.main-content::before {
+    content: "";
+    position: absolute ; /* Posicionamento absoluto para cobrir a div */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.7); /* Cor branca com 50% de transparência */
+    z-index: 0; /* Coloca o pseudo-elemento atrás do conteúdo */
+    pointer-events: none;
+}
+.content{
+    position: relative;
+    text-align: center;
+    padding: 60px 7% 0 7%;
+    color: var(--font-secondary);
+    line-height: 30px;
+    z-index: 1;
+}
+
+.content h1{
+    font-weight: 500;
+    font-size: 50px;
+    color: var(--main-color);
+    margin-bottom: 2%;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 15px 7%;
+    font-family: 'Poppins';
+}
+
+.content h3{
+    font-family: 'Poppins';
+    font-weight: 300;
+    font-size: 28px;
+    margin-left: 10%;
+    margin-right: 10%;
+    line-height: 40px;
+}
+
+.box ul {
+    list-style: none; /* Remove os marcadores de lista */
+    margin-top: 5%; /* Espaçamento acima da lista */
+    margin-bottom: 40px; /* Espaçamento acima da lista */
+}
+
+.box ul li {
+    background-color: #fff; /* Fundo branco para cada item */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    padding: 20px; /* Espaçamento interno */
+}
+
+.icon{
+    width: 40%;
+}
+
+/* ------------ Quem Somos -------------- */
+
+.content .about ul{
+    display: grid;
+    gap: 10%; /* Espaçamento entre as colunas */
+    list-style: none; /* Remove os marcadores de lista */
+    margin-top: 2%;
+    margin-left: 20%;
+    margin-right: 20%;
+    grid-template-columns: 1fr 1fr;
+    padding: 0; /* Remove o padding padrão */
+    gap: 200px; /* Espaçamento entre as colunas */
+}
+
+
+@media (max-width: 768px) { /* Para telas menores que 768px (tablets e celulares) */
+    .about ul {
+        grid-template-columns: 1fr; /* Muda para 1 coluna */
+        align-items: center;
+    }
+    
+}
+
+
+/* ------------ Visões e Valores -------------- */
+
+.content .vision ul{
+    display: grid;
+    gap: 10%; /* Espaçamento entre as colunas */
+    list-style: none; /* Remove os marcadores de lista */
+    margin-top: 2%;
+    margin-left: 10%;
+    margin-right: 10%;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0; /* Remove o padding padrão */
+}
+
+
+@media (max-width: 768px) { /* Para telas menores que 768px (tablets e celulares) */
+    .vision ul {
+        grid-template-columns: 1fr; /* Muda para 1 coluna */
+        align-items: center;
+    }
+    
+}
+
+/* ------------ Diferencial  -------------- */
+
+.content .services ul{
+    display: grid;
+    gap: 15%; /* Espaçamento entre as colunas */
+    list-style: none; /* Remove os marcadores de lista */
+    margin-top: 2%;
+    margin-left: 10%;
+    margin-right: 10%;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0; /* Remove o padding padrão */
+}
+
+
+@media (max-width: 768px) { /* Para telas menores que 768px (tablets e celulares) */
+    .services ul {
+        grid-template-columns: 1fr; /* Muda para 1 coluna */
+        align-items: center;
+    }
+    
+}
+
+/* -------------------------- Mapa interativo --------------------*/
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#map {
+    width: 50%; /* 60% de largura para o mapa */
+    height: 550px; /* Altura do mapa */
+    margin-right: 20px;
+}
+
+.city-list {
+    width: 50%; /* 50% de largura para a lista */
+    max-width: 400px; /* Largura máxima */
+}
+
+.city-list ul {
+    columns: 3; /* Organiza a lista em duas colunas */
+    column-gap: 20px; /* Espaçamento entre as colunas */
+    padding: 0;
+    list-style: none; /* Remove os marcadores da lista */
+    margin-right: -75%;
+    margin-top: -1%;
+    margin-bottom: 20%;
+}
+
+.city-list li {
+    margin-bottom: 10px;
+    cursor: pointer; /* Mostra o cursor de clique */
+    padding: 5px;
+}
+
+.city-list li:hover {
+    background-color: #f0f0f0; /* Destaque ao passar o mouse */
+}
+
+/* ----------------- Fale Conosco --------------*/
+
+.box .contact .section{
+    width: 100%;
+    max-width: 600px; /* Largura máxima do formulário */
+    margin: 40px auto; /* Centraliza o formulário */
+    padding: 10px;
+    background-color: #fff; /* Fundo branco */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    font-family: 'Poppins';
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+
+.form-group input,
+.form-group textarea {
+    width: 80%; /* Campo ocupa 100% da largura */
+    padding: 15px;
+    border: 1px solid #ddd; /* Borda fina */
+    border-radius: 15px; /* Bordas arredondadas */
+    font-size: 16px; /* Tamanho da fonte */
+    color: #333; /* Cor do texto */
+    background-color: #f9f9f9; /* Fundo suave */
+    outline: none; /* Remove o contorno padrão ao focar */
+    transition: border-color 0.3s; /* Transição suave para a borda */
+    font-family: 'Poppins';
+}
+
+.form-group .name,
+.form-group .email{
+    margin-bottom: 20px;
+    display: grid;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #41a3f8; /* Muda a cor da borda ao focar */
+}
+
+.form-row {
+    display: flex; /* Flexbox para alinhar lado a lado */
+    gap: 0; /* Espaço entre os campos */
+    padding-left: 10%;
+    padding-right: 5%;
+    padding-bottom: 0
+}
+
+.form-row .form-group {
+    flex: 1; /* Cada campo ocupa o mesmo espaço */
+}
+
+@media (max-width: 600px) {
+    .form-row {
+        flex-direction: column; /* Coloca os campos em coluna */
+    }
+}
+
+.footer {
+    background: #41a3f8; /* Cor de fundo do footer */
+    color: #f1f1f1; /* Cor do texto */
+    padding: 40px 20px;
+    margin-top: 0;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens quebrem linha em telas menores */
+    justify-content: space-between; /* Distribui o espaço entre os itens */
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-section {
+    flex: 1; /* Os itens se expandem para ocupar o espaço */
+    min-width: 250px; /* Largura mínima */
+    margin-bottom: 20px; /* Espaçamento inferior */
+}
+
+.footer-section h3 {
+    margin-bottom: 15px; /* Espaçamento abaixo do título */
+    font-size: 18px;
+    color: #f9f9f9; /* Cor dos títulos */
+}
+
+.footer-section p,
+.footer-section ul {
+    font-size: 14px;
+    margin-bottom: 10px;
+    line-height: 1.6; /* Espaçamento entre linhas */
+}
+
+.footer-section ul {
+    list-style: none; /* Remove os marcadores da lista */
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+    color: #f1f1f1;
+    text-decoration: none; /* Remove sublinhado */
+    transition: color 0.3s; /* Suave transição de cor */
+}
+
+.footer-section ul li a:hover {
+    color: #57cbee; /* Cor ao passar o mouse */
+}
+
+.social-links a {
+    display: inline-block;
+    margin-right: 10px; /* Espaçamento entre os ícones */
+}
+
+.social-links img {
+    width: 30px; /* Largura dos ícones */
+    height: 30px; /* Altura dos ícones */
+    transition: transform 0.3s; /* Transição suave de transformação */
+}
+
+.social-links img:hover {
+    transform: scale(1.2); /* Aumenta o ícone ao passar o mouse */
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #555; /* Linha separadora no topo */
+    margin-top: 20px;
+    font-size: 14px;
+    color: #ccc; /* Cor do texto de copyright */
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+.footer-bottom a{
+    text-decoration: none;
+    color: #ccc;
+}

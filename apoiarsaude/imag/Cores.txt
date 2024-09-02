@@ -1,0 +1,42 @@
+#57cbee - azul claro
+#17a4e0 - azul medio
+#efd8b4 - bege
+#72ecda - azul esverdeado
+#124d9d
+
+<div class="box services" id="services">
+                <div>
+                    <h1>NOSSO DIFERENCIAL</h1>
+                    <h3>A APOIAR SAÚDE oferece diferentes tipos de atendimento, garantindo resposta rápida às demandas</h3>
+                </div>
+
+                <div class="support">
+                    <p>Suporte de alta qualidade 
+                    durante o periodo noturno, finais de semana e feriados.</p>
+                </div>
+
+                <div class="procedures">
+                    <p>Procedimentos de Enfermagem Específicos com enfermeiros altamente qualificados.</p>
+                </div>
+
+                <div class="partnership">
+                    <p>Parcerias Estratégicas com Empresas de Raio X e Remoção.</p>
+                </div>
+            </div>
+
+
+.content {
+    max-width: 1200px; /* Largura máxima do conteúdo */
+    margin: 0 auto; /* Centraliza o conteúdo */
+    padding: 20px; /* Espaçamento interno */
+    background-color: rgba(255, 255, 255, 0.9); /* Fundo semitransparente para legibilidade */
+    border-radius: 10px; /* Bordas arredondadas para um efeito visual */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
+}
+
+.box {
+    margin-bottom: 40px; /* Espaçamento entre as caixas */
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.05); /* Fundo semitransparente para as caixas */
+    border-radius: 10px; /* Bordas arredondadas */
+}
