@@ -1,256 +1,328 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apoiar Saúde</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
-    crossorigin=""/>
-    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Apoiar Saúde</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="stylesheet"
+            href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+            integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+            crossorigin />
 
-</head>
-<body>
-    <nav id="navbar">
-        <h1><a href="#home"><img src="imag/logo.png" alt="Logo"></a></h1>
-        <div class="flex">
-            <!-- Botão de Menu para Mobile -->
-            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
-        </div>
-    
-        <!-- Menu de Navegação -->
-        <ul class="flex nav-menu" id="navul">
-            <!-- Botão de Fechar no Menu Lateral -->
-            <button class="close-menu" onclick="toggleMenu()">✖</button>
-            <li><a href="#home" onclick="toggleMenu()">Início</a></li>
-            <li><a href="#about" onclick="toggleMenu()">Quem Somos</a></li>
-            <li><a href="#vision" onclick="toggleMenu()">Visão</a></li>
-            <li><a href="#services" onclick="toggleMenu()">Diferencial</a></li>
-            <li><a href="#where" onclick="toggleMenu()">Abrangência</a></li>
-            <!-- Botão "Fale Conosco" para Desktop -->
-            <li class="desktop-fale-conosco">
-                <button class="standartdBtn fale-conosco-btn" onclick="toggleMenu()">
-                    <a href="#contact" >Fale Conosco</a>
-                </button>
-            </li>
-        </ul>
-    </nav>
-  
-
-
-    <!--  Home Section -->
-
-    <div class="bgSection" id="home">
-        <section class="hero-section">
-            <div class="heroDiv">
-                <h1>Apoiar<br> <img src="imag/icon-plus.png" alt=""> Saúde<br></h1>
-                <h4 class="subTitulo">CUIDADOS DE QUALIDADE</h4>
-                <p>Atendimento Hopitalar com suporte humanizado e especializado</p>
+    </head>
+    <body>
+        <nav id="navbar">
+            <h1><a href="#home"><img src="imag/logo.png" alt="Logo"></a></h1>
+            <div class="flex">
+                <!-- Botão de Menu para Mobile -->
+                <button class="menu-toggle" onclick="toggleMenu()">☰</button>
             </div>
-            <div class="heroImg">
-                <div>
-                    <img src="imag/capa.png" alt="Hero" class="mainHeroImg">
-                </div>
-            </div>
-        </section>
-    </div>
 
-    <!-- Single image scroll-->
+            <!-- Menu de Navegação -->
+            <ul class="flex nav-menu" id="navul">
+                <!-- Botão de Fechar no Menu Lateral -->
+                <button class="close-menu" onclick="toggleMenu()">✖</button>
+                <li><a href="#home" onclick="toggleMenu()">Início</a></li>
+                <li><a href="#about" onclick="toggleMenu()">Quem Somos</a></li>
+                <li><a href="#vision" onclick="toggleMenu()">Visão</a></li>
+                <li><a href="#diferential"
+                        onclick="toggleMenu()">Diferencial</a></li>
+                <li><a href="#services" onclick="toggleMenu()">Serviços</a></li>
+                <li><a href="#where" onclick="toggleMenu()">Abrangência</a></li>
+                <!-- Botão "Fale Conosco" para Desktop -->
 
-    <div class="main-content">
-        <div class="content">
-            <!-- ------------- Quem Somos --------------- -->
-            <div class="box about section" id="about">
-                <div class="caption">
-                    <h1>QUEM SOMOS</h1>
-                    <h3>A APOIAR SAÚDE é dedicada a transformar o atendimento domiciliar com qualidade, humanização e segurança.</h3>
-                </div>
-                <ul>
-                    <li class="stabilization">
-                        <img src="imag/heart-icon.png" alt="" class="icon heart">
-                        <p>Estabilização do quadro clínico em casa, evitando hospitalizações desnecessárias.</p>
-                    </li>
-
-                    <li class="fullSupport">
-                        <img src="imag/fullSupport-icon.png" alt="" class="icon support">
-                        <p>Suporte completo: cuidados com dispositivos invasivos e assistência emergencial.</p>
-                    </li>
-                </ul>
-                <button class="standartdBtnQS">
+                <button class="standartdBtn fale-conosco-btn"
+                    onclick="toggleMenu()">
                     <a href="#contact">Fale Conosco</a>
                 </button>
-            </div>
-            <!-- ------------- NOSSA VISÃO  E VALORES --------------- -->
-            <div class="box vision section" id="vision">
-                <div class="caption">
-                    <h1>NOSSA VISÃO  E VALORES</h1>
-                    <h3>Acreditamos que cada paciente é único e merece um atendimento personalizado, por isso, nossa atuação é pautada pela ética, empatia e dedicação.</h3>
+
+            </ul>
+        </nav>
+
+        <!--  Home Section -->
+
+        <div class="bgSection" id="home">
+            <section class="hero-section">
+                <div class="heroDiv">
+                    <h1>Apoiar<br> <img src="imag/icon-plus.png" alt>
+                        Saúde<br></h1>
+                    <h4 class="subTitulo">CUIDADOS DE QUALIDADE</h4>
+                    <p>Atendimento Hopitalar com suporte humanizado e
+                        especializado</p>
                 </div>
-                <ul>
-                    <li class="house">
-                        <img src="imag/domiciliar-icon.png" alt="" class="icon heart">
-                        <p>Ser referência no cuidado domiciliar humanizado..</p>
-                    </li>
-
-                    <li class="ethics">
-                        <img src="imag/fullSupport-icon.png" alt="" class="icon heart">
-                        <p>Valorizar ética, empatia e suporte emocional.</p>
-                    </li>
-                    <li class="service">
-                        <img src="imag/service-icon.png" alt="" class="icon heart">
-                        <p>Atendimento personalizado e compromisso em cada etapa do cuidado.</p>
-                    </li>
-                </ul>
-                <button class="standartdBtnQS">
-                    <a href="#contact">Fale Conosco</a>
-                </button>    
-            </div>
-
-            <!-- ------------- NOSSO DIFERENCIAL --------------- -->
-            <div class="box services section" id="services">
-                <div class="caption">
-                    <h1>NOSSO DIFERENCIAL</h1>
-                    <h3>A APOIAR SAÚDE oferece diferentes tipos de atendimento, garantindo resposta rápida às demandas.</h3>
+                <div class="heroImg">
+                    <div>
+                        <img src="imag/capa.png" alt="Hero" class="mainHeroImg">
+                    </div>
                 </div>
-                <ul>
-                    <li class="house">
-                        <img src="imag/suporte-icon.png" alt="" class="icon heart">
-                        <p>Suporte de alta qualidade durante o periodo noturno, finais de semana e feriados.</p>
-                    </li>
+            </section>
+        </div>
 
-                    <li class="ethics">
-                        <img src="imag/enfermagem-icon.png" alt="" class="icon heart">
-                        <p>Procedimentos de Enfermagem Específicos com enfermeiros altamente qualificados.</p>
-                    </li>
-                    <li class="service">
-                        <img src="imag/remocao-icon.png" alt="" class="icon heart">
-                        <p>Parcerias Estratégicas com Empresas de Raio X e Remoção.</p>
-                    </li>
-                </ul>
-                <button class="standartdBtnQS">
-                    <a href="#contact">Fale Conosco</a>
-                </button>    
-            </div>
+        <!-- Single image scroll-->
 
-<!-- --------------- Mapa Interativo ------------------>
+        <div class="main-content">
+            <div class="content">
+                <!-- ------------- Quem Somos --------------- -->
+                <div class="box about section" id="about">
+                    <div class="caption">
+                        <h2>QUEM SOMOS</h2>
+                        <h3>A APOIAR SAÚDE é dedicada a transformar o
+                            atendimento domiciliar com qualidade, humanização e
+                            segurança.</h3>
+                    </div>
+                    <ul>
+                        <li class="stabilization">
+                            <img src="imag/heart-icon.png" alt
+                                class="icon heart">
+                            <p>Estabilização do quadro clínico em casa, evitando
+                                hospitalizações desnecessárias.</p>
+                        </li>
 
-            <div class="box where section" id="where">
-                <div class="caption">
-                    <h1>ONDE ATENDEMOS</h1>
-                    <!-- incluir mapa interativo-->
-                    <div class="container">
-                        <!-- Mapa Interativo -->
-                        <div id="map"></div>
-                        <!-- Lista de Cidades -->
-                        <div class="city-list">
-                            <ul>
-                                <li id="belfordroxo">Belford Roxo</li>
-                                <li id="caxias">Duque de Caxias</li>
-                                <li id="guapimirim">Guapimirim</li>
-                                <li id="itaborai">Itaboraí</li>
-                                <li id="itaguai">Itaguaí</li>
-                                <li id="japeri">Japeri</li>
-                                <li id="mage">Magé</li>
-                                <li id="nilopolis">Nilópolis</li>
-                                <li id="niteroi">Niterói</li>
-                                <li id="novaiguacu">Nova Iguaçu</li>
-                                <li id="paracambi">Paracambi</li>
-                                <li id="queimados">Queimados</li>
-                                <li id="saogoncalo">São Gonçalo</li>
-                                <li id="saojoaodemeriti">São João de Meriti</li>
-                                <li id="seropedica">Seropédica</li>
-                                <li id="marica">Maricá</li>
-                                <li id="mesquita">Mesquita</li>
-                                <li id="riobonito">Rio Bonito</li>
-                                <li id="tangua">Tanguá</li>                         
-                            </ul>
+                        <li class="fullSupport">
+                            <img src="imag/fullSupport-icon.png" alt
+                                class="icon support">
+                            <p>Suporte completo: cuidados com dispositivos
+                                invasivos e assistência emergencial.</p>
+                        </li>
+                    </ul>
+                    <button class="standartdBtnQS">
+                        <a href="#contact">Fale Conosco</a>
+                    </button>
+                </div>
+                <!-- ------------- NOSSA VISÃO  E VALORES --------------- -->
+                <div class="box vision section" id="vision">
+                    <div class="caption">
+                        <h2>NOSSA VISÃO E VALORES</h2>
+                        <h3>Acreditamos que cada paciente é único e merece um
+                            atendimento personalizado, por isso, nossa atuação é
+                            pautada pela ética, empatia e dedicação.</h3>
+                    </div>
+                    <ul>
+                        <li class="house">
+                            <img src="imag/domiciliar-icon.png" alt
+                                class="icon heart">
+                            <p>Ser referência no cuidado domiciliar
+                                humanizado..</p>
+                        </li>
+
+                        <li class="ethics">
+                            <img src="imag/fullSupport-icon.png" alt
+                                class="icon heart">
+                            <p>Valorizar ética, empatia e suporte emocional.</p>
+                        </li>
+                        <li class="service">
+                            <img src="imag/service-icon.png" alt
+                                class="icon heart">
+                            <p>Atendimento personalizado e compromisso em cada
+                                etapa do cuidado.</p>
+                        </li>
+                    </ul>
+                    <button class="standartdBtnQS">
+                        <a href="#contact">Fale Conosco</a>
+                    </button>
+                </div>
+
+                <!-- ------------- NOSSO DIFERENCIAL --------------- -->
+                <div class="box services section" id="diferential">
+                    <div class="caption">
+                        <h2>NOSSO DIFERENCIAL</h2>
+                        <h3>A APOIAR SAÚDE oferece diferentes tipos de
+                            atendimento, garantindo resposta rápida às
+                            demandas.</h3>
+                    </div>
+                    <ul>
+                        <li class="house">
+                            <img src="imag/suporte-icon.png" alt
+                                class="icon heart">
+                            <p>Suporte de alta qualidade durante o período
+                                noturno, finais de semana e feriados.</p>
+                        </li>
+
+                        <li class="ethics">
+                            <img src="imag/enfermagem-icon.png" alt
+                                class="icon heart">
+                            <p>Procedimentos de Enfermagem Específicos com
+                                enfermeiros altamente qualificados.</p>
+                        </li>
+
+                        <li class="service">
+                            <img src="imag/remocao-icon.png" alt
+                                class="icon heart">
+                            <p>Serviços de remoção e Raio X.</p>
+                        </li>
+
+                    </ul>
+                    <button class="standartdBtnQS">
+                        <a href="#contact">Fale Conosco</a>
+                    </button>
+                </div>
+
+                <!-- ------------- NOSSOS SERVIÇOS --------------- -->
+                <div class="box services section" id="services">
+                    <div class="caption">
+                        <h2>NOSSOS SERVIÇOS</h2>
+                    </div>
+                    <ul>
+                        <li class="ethics">
+                            <img src="imag/medical_services.svg" alt
+                                class="icon heart">
+                            <p>Equipe de técnicos, cuidadores, e serviços de
+                                procedimentos.</p>
+                        </li>
+                        <li class="ethics">
+                            <img src="imag/health_and_safety.svg" alt
+                                class="icon heart">
+                            <p>Atendimento em domicílio, casa de
+                                repouso, e hospitais.</p>
+                        </li>
+
+                        <li class="service">
+                            <img src="imag/handshake.svg" alt
+                                class="icon heart">
+                            <p>Parceria com Empresas de material hospitalar com
+                                preço
+                                acessível.</p>
+                        </li>
+
+                    </ul>
+                    <button class="standartdBtnQS">
+                        <a href="#contact">Fale Conosco</a>
+                    </button>
+                </div>
+                <!-- --------------- Mapa Interativo ------------------>
+
+                <div class="box where section" id="where">
+                    <div class="caption">
+                        <h2>ONDE ATENDEMOS</h2>
+                        <!-- incluir mapa interativo-->
+                        <div class="container">
+                            <!-- Mapa Interativo -->
+                            <div id="map"></div>
+                            <!-- Lista de Cidades -->
+                            <div class="city-list">
+                                <ul>
+                                    <li id="belfordroxo">Belford Roxo</li>
+                                    <li id="caxias">Duque de Caxias</li>
+                                    <li id="guapimirim">Guapimirim</li>
+                                    <li id="itaborai">Itaboraí</li>
+                                    <li id="itaguai">Itaguaí</li>
+                                    <li id="japeri">Japeri</li>
+                                    <li id="mage">Magé</li>
+                                    <li id="nilopolis">Nilópolis</li>
+                                    <li id="niteroi">Niterói</li>
+                                    <li id="novaiguacu">Nova Iguaçu</li>
+                                    <li id="paracambi">Paracambi</li>
+                                    <li id="queimados">Queimados</li>
+                                    <li id="saogoncalo">São Gonçalo</li>
+                                    <li id="saojoaodemeriti">São João de
+                                        Meriti</li>
+                                    <li id="seropedica">Seropédica</li>
+                                    <li id="marica">Maricá</li>
+                                    <li id="mesquita">Mesquita</li>
+                                    <li id="riobonito">Rio Bonito</li>
+                                    <li id="tangua">Tanguá</li>
+                                </ul>
+                            </div>
+
                         </div>
                     </div>
-                </div>     
-            </div>
-
-<!-- --------------- Fale Conosco ------------------>
-
-            <div class="box contact section" id="contact">
-                <div class="caption">
-                <h1>FALE CONOSCO</h1>
                 </div>
-                <div>
-                    <form method="POST" action="" class="contact">
-                        <div class="form-row">
-                            <div class="form-group">
-                                <input type="text" placeholder="Informe seu nome:" class="name" required name="name">
-                            </div>
-                            <div class="form-group">
-                                <input type="e-mail" placeholder="Informe seu e-mail:" class="email" required name="e-mail">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <textarea rows="10" placeholder="Escreva sua mensagem" class="message" required name="message"></textarea>
-                        </div>
+
+                <!-- --------------- Fale Conosco ------------------>
+
+                <div class="box contact section" id="contact">
+                    <div class="caption">
+                        <h2>FALE CONOSCO</h2>
                     </div>
-                <!--<button type="submit" class="submit-btn">Enviar</button>-->
-                <button class="standartdBtnQS" type="submit">
-                    <a href="">Enviar</a>
-                </button> 
+                    <div>
+                        <form method="POST" action class="contact">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <input type="text"
+                                        placeholder="Informe seu nome:"
+                                        class="name" required name="name">
+                                </div>
+                                <div class="form-group">
+                                    <input type="e-mail"
+                                        placeholder="Informe seu e-mail:"
+                                        class="email" required name="e-mail">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <textarea rows="10"
+                                    placeholder="Escreva sua mensagem"
+                                    class="message" required
+                                    name="message"></textarea>
+                            </div>
+                        </div>
+                        <!--<button type="submit" class="submit-btn">Enviar</button>-->
+                        <button class="standartdBtnQS" type="submit">
+                            <a href>Enviar</a>
+                        </button>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-    <!-- Single image scroll End -->
-    <footer class="footer">
-        <div class="footer-container">
-            <!-- Informações de Contato -->
-            <div class="footer-section contact-info">
-                <h3>Informações de Contato</h3>
-                <p><strong>Endereço:</strong> Rua Exemplo, 123, Bairro, Cidade, Estado, CEP</p>
-                <p><strong>Telefone:</strong> (11) 1234-5678</p>
-                <p><strong>E-mail:</strong> contato@apoiarsaude.com.br</p>
-                <p><strong>Horário de Funcionamento:</strong> Segunda a Sexta, das 8h às 18h</p>
-            </div>
-    
-            <!-- Links Rápidos e Políticas -->
-            <div class="footer-section quick-links">
-                <h3>Links Rápidos</h3>
-                <ul>
-                    <li><a href="#about">Quem Somos</a></li>
-                    <li><a href="#services">Nossos Serviços</a></li>
-                    <li><a href="#contact">Fale Conosco</a></li>
-                </ul>
-                <h3>Políticas</h3>
-                <ul>
-                    <li><a href="#">Política de Privacidade</a></li>
-                    <li><a href="#">Termos de Uso</a></li>
-                </ul>
-            </div>
-    
-            <!-- Links para Redes Sociais -->
-            <div class="footer-section social-links">
-                <h3>Siga-nos</h3>
-                <a href="#" target="_blank"><img src="imag/facebook-icon.png" alt="Facebook"></a>
-                <a href="#" target="_blank"><img src="imag/instagram-icon.png" alt="Instagram"></a>
-                <a href="#" target="_blank"><img src="imag/linkedin-icon.png" alt="LinkedIn"></a>
-            </div>
-        </div>
-    
-        <!-- Copyright -->
-        <div class="footer-bottom">
-            <p>&copy; 2024 Apoiar Saúde. Todos os direitos reservados. Desenvolvido por <a href="https://maiarasc.com/">maiarasc.com</a>.</p>
-        </div>
-    </footer>
-    
-    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-<!-- Make sure you put this AFTER Leaflet's CSS -->
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
-    crossorigin=""></script>
-    <script src="js/script.js"></script>
-    <script>
+            <!-- Single image scroll End -->
+            <footer class="footer">
+                <div class="footer-container">
+                    <!-- Informações de Contato -->
+                    <div class="footer-section contact-info">
+                        <h3>Informações de Contato</h3>
+                        <p><strong>Telefone:</strong> (21) 99231-4689</p>
+                        <p><strong>E-mail:</strong>
+                            apoiarsauderj@gmail.com</p>
+                        <p><strong>Horário de Funcionamento:</strong> Segunda a
+                            Sexta, das 8h às 17h</p>
+                    </div>
+
+                    <!-- Links Rápidos e Políticas -->
+                    <div class="footer-section quick-links">
+                        <h3>Links Rápidos</h3>
+                        <ul>
+                            <li><a href="#about">Quem Somos</a></li>
+                            <li><a href="#services">Nossos Serviços</a></li>
+                            <li><a href="#contact">Fale Conosco</a></li>
+                        </ul>
+                        <h3>Políticas</h3>
+                        <ul>
+                            <li><a href="#">Política de Privacidade</a></li>
+                            <li><a href="#">Termos de Uso</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Links para Redes Sociais -->
+                    <div class="footer-section social-links">
+                        <h3>Siga-nos</h3>
+                        <a
+                            href="https://www.instagram.com/apoiarsauderj?igsh=MTZjMDQ5Yzd1M2Izdw=="
+                            target="_blank"><img
+                                src="imag/instagram-icon.png"
+                                alt="Instagram"></a>
+                    </div>
+                </div>
+
+                <!-- Copyright -->
+                <div class="footer-bottom">
+                    <p>&copy; 2024 Apoiar Saúde. Todos os direitos reservados.
+                        Desenvolvido por <a
+                            href="https://maiarasc.com/">maiarasc.com</a>.</p>
+                </div>
+            </footer>
+
+            <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+            <!-- Make sure you put this AFTER Leaflet's CSS -->
+            <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+                integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+                crossorigin></script>
+            <script src="js/script.js"></script>
+            <script>
         function toggleMenu() {
             const navMenu = document.querySelector('.nav-menu');
             navMenu.classList.toggle('open'); // Alterna a classe 'open'
         }
     </script>
-</body>
-</html>
+        </body>
+    </html>

@@ -5,6 +5,10 @@
     padding: 0;
 }
 
+body {
+    overflow-x: hidden;
+  }
+
 html{
     scroll-behavior: smooth;
 }
@@ -20,6 +24,7 @@ html{
 body{
     box-sizing: border-box;
     font-family: 'Poppins';
+    overflow-x: hidden;
 }
 
 .flex{
@@ -185,11 +190,13 @@ nav ul li a:hover{
     .standartdBtn {
         width: auto; /* Ajusta a largura para centralização */
         margin: 0 auto; /* Centraliza o botão na navbar mobile */
+        margin-top: 5px;
         
     }
 
     .standartdBtn a {
         text-decoration: none;
+        align-items: center;
         color: white;
     }
     .nav-menu {
@@ -427,7 +434,8 @@ section {
     z-index: 1;
 }
 
-.content h1{
+
+.content h2{
     font-weight: 500;
     font-size: 50px;
     color: var(--main-color);
@@ -436,6 +444,7 @@ section {
     padding: 15px 7%;
     font-family: 'Poppins';
 }
+
 
 .content h3{
     font-family: 'Poppins';
@@ -477,7 +486,7 @@ section {
     gap: 200px; /* Espaçamento entre as colunas */
 }
 
-@media (max-width: 768px) {
+@media (max-width: 769px) {
     .content .about ul {
         grid-template-columns: 1fr; /* Muda o layout para uma coluna */
         margin-left: 5%; /* Reduz a margem esquerda */
@@ -485,7 +494,7 @@ section {
         gap: 20px; /* Reduz o espaçamento entre os itens */
     }
 
-    .content .about .caption h1 {
+    .content .caption h2 {
         font-size: 8vw; /* Ajusta o tamanho do título */
         margin-bottom: 10px; /* Reduz o espaçamento inferior */
     }
@@ -515,9 +524,11 @@ section {
     }
 
     .standartdBtnQS {
-        margin: 0 auto; /* Centraliza o botão */
+        margin: 20px auto;  /* Centraliza o botão */
         display: block; /* Garante que o botão ocupe o espaço correto */
         padding: 10px 20px; /* Ajusta o espaçamento do botão */
+        margin-bottom: 30px; /* Adiciona espaço abaixo do botão */
+
     }
 }
 
@@ -546,11 +557,6 @@ section {
         margin-left: 5%; /* Reduz a margem esquerda */
         margin-right: 5%; /* Reduz a margem direita */
         gap: 20px; /* Reduz o espaçamento entre os itens */
-    }
-
-    .content .vision .caption h1 {
-        font-size: 8vw; /* Ajusta o tamanho do título */
-        margin-bottom: 10px; /* Reduz o espaçamento inferior */
     }
 
     .content .vision .caption h3 {
@@ -634,9 +640,10 @@ section {
     }
 
     .standartdBtnQS {
-        margin: 0 auto; /* Centraliza o botão */
+        margin: 20px auto;  /* Centraliza o botão */
         display: block; /* Garante que o botão ocupe o espaço correto */
         padding: 10px 20px; /* Ajusta o espaçamento do botão */
+        margin-bottom: 30px; /* Adiciona espaço abaixo do botão */
     }
 }
 
@@ -691,7 +698,7 @@ section {
 
     #map {
         width: 90%; /* Ajusta a largura do mapa para caber na tela */
-        height: 300px; /* Reduz a altura do mapa para caber na tela */
+        height: 330px; /* Reduz a altura do mapa para caber na tela */
         margin: 0 auto 20px; /* Centraliza o mapa e adiciona margem inferior */
     }
 

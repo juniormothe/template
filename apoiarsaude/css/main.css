@@ -20,7 +20,9 @@ html{
 body{
     box-sizing: border-box;
     font-family: 'Poppins';
+    
 }
+
 
 .flex{
     display: flex;
@@ -282,6 +284,8 @@ section{
     padding: 15px 7%;
     font-family: 'Poppins';
 }
+
+
 
 .content h3{
     font-family: 'Poppins';
